@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Blog | Netal Marothiya – Psychologist in Bangalore</title>
+  <meta name="description" content="Expert mental health articles by Netal Marothiya, psychologist in Bangalore. Practical guidance on anxiety, depression, stress management, relationships, and wellness in India.">
+  <meta name="keywords" content="mental health blog Bangalore, psychologist blog India, anxiety tips Bangalore, depression guide India, stress management Bangalore, Netal Marothiya blog">
+  <link rel="canonical" href="https://netalmarothiya.com/blog/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{--primary:#2A7D6F;--accent:#F4845F;--dark:#12223A;--grey:#6B7280;--border:#E5E7EB;--light:#F9FAFB}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',sans-serif;color:var(--dark);background:#fff}
+    a{text-decoration:none;color:inherit}
+    .nav{background:#fff;border-bottom:1px solid var(--border);padding:16px 0;position:sticky;top:0;z-index:99}
+    .nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center}
+    .nav-brand{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--dark);display:flex;align-items:center;gap:8px}
+    .nav-cta{background:var(--primary);color:#fff;padding:10px 20px;border-radius:50px;font-size:13px;font-weight:600;transition:background .2s}
+    .nav-cta:hover{background:#1F6055}
+    .hero{background:linear-gradient(135deg,#E8F5F2,#FEF5F0);padding:64px 24px 48px;text-align:center}
+    .hero-inner{max-width:640px;margin:0 auto}
+    .tag{display:inline-block;background:#E8F5F2;color:var(--primary);font-size:12px;font-weight:700;padding:5px 14px;border-radius:50px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:16px}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,44px);color:var(--dark);margin-bottom:14px;line-height:1.2}
+    .hero p{font-size:17px;color:var(--grey);line-height:1.7}
+    .container{max-width:1100px;margin:0 auto;padding:0 24px}
+    .blog-section{padding:64px 0 80px}
+    .section-label{font-size:13px;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:.5px;margin-bottom:28px;display:flex;align-items:center;gap:10px}
+    .section-label::after{content:'';flex:1;height:1px;background:var(--border)}
+    .featured{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;margin-bottom:48px}
+    .featured-card{background:var(--light);border-radius:16px;overflow:hidden;border:1px solid var(--border);transition:all .3s;display:flex;flex-direction:column}
+    .featured-card:hover{box-shadow:0 12px 40px rgba(0,0,0,.1);transform:translateY(-4px)}
+    .featured-thumb{height:240px;display:flex;align-items:center;justify-content:center;font-size:72px}
+    .featured-thumb-1{background:linear-gradient(135deg,#D1FAE5,#A7F3D0)}
+    .featured-body{padding:28px;flex:1;display:flex;flex-direction:column}
+    .blog-meta{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+    .blog-cat{background:var(--primary);color:#fff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:50px;text-transform:uppercase;letter-spacing:.3px}
+    .blog-date{font-size:12px;color:var(--grey)}
+    .blog-read{font-size:12px;color:var(--grey)}
+    .featured-body h2{font-family:'Playfair Display',serif;font-size:22px;color:var(--dark);margin-bottom:10px;line-height:1.3}
+    .featured-body p{font-size:14px;color:var(--grey);line-height:1.7;margin-bottom:16px;flex:1}
+    .read-more{font-size:13px;font-weight:600;color:var(--primary);display:inline-flex;align-items:center;gap:6px;transition:gap .2s}
+    .featured-card:hover .read-more{gap:10px}
+    .side-cards{display:flex;flex-direction:column;gap:20px}
+    .side-card{background:var(--light);border-radius:14px;border:1px solid var(--border);overflow:hidden;display:flex;transition:all .3s}
+    .side-card:hover{box-shadow:0 8px 28px rgba(0,0,0,.08);transform:translateY(-2px)}
+    .side-thumb{width:100px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:36px}
+    .side-thumb-2{background:linear-gradient(135deg,#DBEAFE,#BFDBFE)}
+    .side-thumb-3{background:linear-gradient(135deg,#FEF3C7,#FDE68A)}
+    .side-body{padding:16px 18px;display:flex;flex-direction:column;justify-content:center}
+    .side-body h3{font-size:15px;color:var(--dark);margin-bottom:6px;line-height:1.4}
+    .side-body p{font-size:13px;color:var(--grey);line-height:1.6;margin-bottom:8px}
+    .cta-strip{background:linear-gradient(135deg,var(--primary),#1F6055);border-radius:16px;padding:40px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:48px}
+    .cta-strip h3{font-family:'Playfair Display',serif;font-size:24px;color:#fff;margin-bottom:6px}
+    .cta-strip p{font-size:15px;color:rgba(255,255,255,.8)}
+    .cta-strip a{background:#fff;color:var(--primary);padding:13px 28px;border-radius:50px;font-weight:700;font-size:15px;white-space:nowrap;transition:all .2s}
+    .cta-strip a:hover{box-shadow:0 6px 20px rgba(0,0,0,.2)}
+    footer{background:#12223A;color:rgba(255,255,255,.7);text-align:center;padding:24px;font-size:14px}
+    footer a{color:rgba(255,255,255,.7)}
+    @media(max-width:768px){.featured{grid-template-columns:1fr}.side-card{flex-direction:column}.side-thumb{width:100%;height:120px}.cta-strip{flex-direction:column;text-align:center}}
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../" class="nav-brand">🧠 Netal Marothiya</a>
+    <a href="../#booking" class="nav-cta">Book a Session</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="tag">Mental Health Blog</span>
+    <h1>Expert Insights on Mental Wellness</h1>
+    <p>Research-backed articles on anxiety, depression, stress, and relationships — written for individuals and families in Bangalore and across India.</p>
+  </div>
+</div>
+
+<section class="blog-section">
+  <div class="container">
+    <div class="section-label">All Articles</div>
+    <div class="featured">
+      <a href="anxiety-signs-psychologist-bangalore.html" class="featured-card">
+        <div class="featured-thumb featured-thumb-1">😰</div>
+        <div class="featured-body">
+          <div class="blog-meta">
+            <span class="blog-cat">Anxiety</span>
+            <span class="blog-date">Oct 15, 2024</span>
+            <span class="blog-read">· 7 min read</span>
+          </div>
+          <h2>10 Signs You Should See a Psychologist in Bangalore — and How to Take That First Step</h2>
+          <p>From persistent worry to sleepless nights — learn the signs that it's time to reach out for professional mental health support in Bangalore, and how to do it.</p>
+          <span class="read-more">Read Article <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+      <div class="side-cards">
+        <a href="managing-workplace-stress-bangalore.html" class="side-card">
+          <div class="side-thumb side-thumb-2">💼</div>
+          <div class="side-body">
+            <div class="blog-meta">
+              <span class="blog-cat" style="background:#3B82F6">Stress</span>
+              <span class="blog-date">Sep 22, 2024</span>
+            </div>
+            <h3>Managing Workplace Stress in Bangalore's Fast-Paced Tech Culture</h3>
+            <p>A psychologist's guide to recognizing and preventing tech burnout in Bangalore.</p>
+            <span class="read-more">Read <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="understanding-depression-india.html" class="side-card">
+          <div class="side-thumb side-thumb-3">💛</div>
+          <div class="side-body">
+            <div class="blog-meta">
+              <span class="blog-cat" style="background:#D97706">Depression</span>
+              <span class="blog-date">Aug 30, 2024</span>
+            </div>
+            <h3>Understanding Depression: What Every Indian Family Needs to Know</h3>
+            <p>Myths, signs, and how families can support a loved one through depression.</p>
+            <span class="read-more">Read <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="cta-strip">
+      <div>
+        <h3>Ready to Start Your Journey?</h3>
+        <p>Book a session with Netal — online or in-person in Bangalore. Starting from ₹1,500.</p>
+      </div>
+      <a href="../#booking">Book an Appointment</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2024 Netal Marothiya Psychology, Bangalore · <a href="../">Home</a> · <a href="../#booking">Book a Session</a> · <a href="https://www.linkedin.com/in/netal-marothiya-30bb451a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+</footer>
+</body>
+</html>
